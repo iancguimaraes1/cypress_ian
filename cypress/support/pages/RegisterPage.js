@@ -53,4 +53,4 @@ class RegisterPage {
   }
 }
 
-export default new LoginPage();
+export default new RegisterPage();

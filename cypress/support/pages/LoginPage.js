@@ -1,7 +1,7 @@
 //**********Mapping**********
 const el = {
     txtTitle: 'h1.text-xs-center',
-    linkHaveAccount: 'p.text-xs-center > a',
+    linkRegisterAccount: 'p.text-xs-center > a',
     fieldUser: '#:nth-child(1) > .form-control',
     fieldEmail: ':nth-child(1) > .form-control',
     fieldPassword: ':nth-child(2) > .form-control',
@@ -15,6 +15,10 @@ class LoginPage {
 
   verifySignInPage(){
     cy.get(el.txtTitle).invoke('text').should('equal', 'Sign In');
+  }
+
+  clickLinkRegisterPage(){
+    cy.get(el.linkRegisterAccount).click()
   }
 
   registerUser(){

@@ -1,8 +1,7 @@
-///<reference types="Cypress"/>
-
 //Page imports
 import loginPage from '../../support/pages/LoginPage.js';
 import homePage from '../../support/pages/HomePage.js';
+import registerPage from '../../support/pages/RegisterPage.js';
 
 
 describe('loginValidations', ()=>{
@@ -22,12 +21,18 @@ describe('loginValidations', ()=>{
     it('Successful login', ()=>{
         //Realize login with registered user and validate it on home page
         loginPage.loginFlow(email, password)
-        homePage.verifyLogin(user);   
+        homePage.verifyLogin(user)  
     })
 
     it('Login attempt with wrong password', ()=>{
         //Try to login with wrong password
         loginPage.loginFlow(email, 'password')
-        loginPage.errorMessage();   
+        loginPage.errorMessage()   
+    })
+
+    it('Go to sign up from login page', ()=>{
+        loginPage.clickLinkRegisterPage()
+        registerPage.verifySignUpPage()
+
     })
 })
