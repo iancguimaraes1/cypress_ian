@@ -1,0 +1,25 @@
+{
+  "name": "cypress_ian",
+  "version": "1.0.0",
+  "description": "Automation project of Conduit",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iancguimaraes1/cypress-ilia.git"
+  },
+  "keywords": [
+    "cypress"
+  ],
+  "author": "Ian Guimaraes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iancguimaraes1/cypress-ilia/issues"
+  },
+  "homepage": "https://github.com/iancguimaraes1/cypress-ilia#readme",
+  "devDependencies": {
+    "cypress": "^12.17.2"
+  }
+}
