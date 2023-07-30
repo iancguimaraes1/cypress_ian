@@ -9,7 +9,7 @@ describe('loginValidations', ()=>{
     var password = Cypress.config('password')
     var user = Cypress.config('user')
 
-    //Since this is only login tests we can iniciate the browser on login page
+    //Since this is only about login tests we can iniciate the browser on login page
     beforeEach(()=>{
         cy.visit('/login')  
     })

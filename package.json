@@ -4,7 +4,9 @@
   "description": "Automation project of Conduit",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cyopen": "cypress open",
+    "cyrun": "cypress run"
   },
   "repository": {
     "type": "git",
@@ -21,5 +23,8 @@
   "homepage": "https://github.com/iancguimaraes1/cypress-ilia#readme",
   "devDependencies": {
     "cypress": "^12.17.2"
+  },
+  "dependencies": {
+    "mochawesome": "^7.1.3"
   }
 }

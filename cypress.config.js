@@ -10,4 +10,12 @@ module.exports = defineConfig({
     password: 'Teste1234',
     user: 'ianCypressTest'
   },
+  reporter: 'mochawesome',
+  reporterOptions: {
+    reportDir: 'cypress/reports',
+    overwrite: false,
+    html: true,
+    json: true,
+    timestamp: 'mmddyyyy_HHMMss'
+  }
 });
